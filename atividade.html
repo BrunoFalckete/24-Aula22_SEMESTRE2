@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade</title>
+</head>
+<body>
+
+    <style>
+        .danger{
+            border: 1px solid red;
+        }
+
+        .success{
+            border: 1px solid green;
+        }
+    </style>
+
+    <script>
+        
+        function validate(){
+            //resgatar o elemento DOM
+            var input1 = document.getElementById("input1");
+
+            //verificar se vazio
+            if(input1.value == ''){
+                //acrescentar a class danger ao objeto dom
+                input1.classList.add('danger');
+            } else {
+                input1.classList.add('success');
+            }
+        }
+    </script>
+
+    <input 
+        type="text" 
+        onfocus="console.log('Estou com foco na caixa de texto')"
+        id="input1"
+        onblur="validate()"
+    />
+
+    <input 
+        type="text" 
+        onfocus="console.log('Estou com foco na caixa de texto')"
+        id="input1"
+        onblur="validate()"
+    />
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+body{
+    padding: 10px 40px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.numeros {
+    width: 30px;
+    margin: 0px 10px;
+    outline: none;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.input-text {
+    margin-left: 5px;
+    width: 150px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.select {
+    margin-left: 12px;
+
+}
+
+.mt{
+    margin-top: 10px;
+}
+
+.button {
+    border: 0;
+    padding: 10px;
+    background: #f0f0f0;
+}
+
+.button:hover{
+    background: #0e0e0e;
+    color: #fff;
+}
+.button:focus{
+    border: 1px solid #000;
+}
+
+.button:active{
+    border: 1px solid #000;
+}
+
+.mensagem{
+    border: 0;
+    font-size: 16px;
+    width: 200px;
+    outline: none;
+}
+
+.danger{
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+}
+
+.success{
+    width: 350px;
+    text-align: center;
+    border: 1px solid #00ff00;
+    padding: 5px 0;
+}
+
+.table {
+    border: 1px solid #000;
+}
+
+.table td {
+    padding: 5px;
+    border: 1px solid #000;
+}

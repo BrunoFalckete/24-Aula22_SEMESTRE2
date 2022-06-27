@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercicios</title>
+        <link rel="stylesheet" href="./styles.css"/>
+        <script type="text/javascript" src="./functions.js"></script>
+    </head>
+    <body>
+        <div class="d-flex justify-content-center">
+            <h4>
+                <strong>1</strong> - Criar 3 caixas de texto do tipo numero e apresentar o maior valor em uma outra
+                caixa de texto do tipo numero
+            </h4>
+        </div>
+        <div class="d-flex justify-content-center">
+            <input type="number" id="n1" class="numeros" onchange="handleChange('n1')"/>
+            <input type="number" id="n2" class="numeros" onchange="handleChange('n2')"/>
+            <input type="number" id="n3" class="numeros" onchange="handleChange('n3')"/>
+            =
+            <input type="number" id="maior" class="numeros" max="50" readonly/>
+        </div>
+        <hr/>
+        <div class="d-flex justify-content-center">
+            <h4>
+                <strong>2</strong> - Validar um formulário com os seguintes campos: Input Text, Option, Checkbox
+            </h4>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div>
+                <h5>Cadastro de pessoa</h5>
+                <div class="d-flex">
+                    <label for="nome">Nome: </label>
+                    <input type="text" class="input-text" id="nome" />
+                </div>
+                <div class="d-flex mt">
+                    <label for="sexo">Sexo: </label>
+                    <select id="sexo" class="select">
+                        <option selected value="default">Selecione</option>
+                        <option value="m">Masculino</option>
+                        <option value="f">Feminino</option>
+                        <option value="n">Não informar</option>
+                    </select>
+                </div>
+                <div class="d-flex mt" >
+                    <input type="checkbox" id="termo" />
+                    <label for="termo" id="labeltermo">Concordo com os termos</label>
+                </div>
+                <button type="button" onclick="validate()" class="mt button">Enviar</button>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center mt">
+            <input type="text" id="mensagem" class="mensagem" readonly/>
+        </div>
+        <hr/>
+        <div class="d-flex justify-content-center mt">
+            <h4>
+                <strong>3</strong> - Criar uma tabela de tamanho 3x3. Criar um botão "Gerar numeros". Na tabela deve aparecer os numeros gerados de forma randomica.
+            </h4>
+        </div>
+        <div class="d-flex justify-content-center" id="table">
+            <table class="table">
+                <tr>
+                    <td id="11"></td>
+                    <td id="12"></td>
+                    <td id="13"></td>
+                </tr>
+                <tr>
+                    <td id="21"></td>
+                    <td id="22"></td>
+                    <td id="23"></td>
+                </tr>
+                <tr>
+                    <td id="31"></td>
+                    <td id="32"></td>
+                    <td id="33"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button class="button mt" onclick="gerarNumeros()">Gerar Numeros</button>
+        </div>
+    </body>
+</html>
